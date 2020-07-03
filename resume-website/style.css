@@ -1,11 +1,10 @@
 body {
   font-family: 'Roboto Slab', serif;
-}
-
-body {
-  background-color: whitesmoke;
+  background-color: lightgray;
   margin-left: 2%;
   margin-right: 2%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 section, img {
@@ -17,17 +16,13 @@ section, img {
 section {
   list-style-position: inside;
   padding: 3px;
-  border: 2px solid silver;
+  border: 2px solid #67032f;
+  background-color: #92b4c5;
 }
 
 #title, h2 {
   text-align: center;
-  color: #7395a6;
-}
-
-#title > p {
-  margin: 0;
-  font-style: italic;
+  color: black;
 }
 
 nav {
@@ -48,10 +43,7 @@ div {
   text-align: center;
 }
 
-#about {
-  display: flex;
-  margin: 10px;
-  justify-content: space-evenly;
+#about-text {
   text-align: left;
 }
 
@@ -62,19 +54,44 @@ p {
 #about > img {
   height: auto;
   width: auto;
+  margin: 20px;
   border: solid 2px  #353533;
   border-radius: 5%;
+  float: left;
 }
 
-div > img {
+figure > img {
   height: 200px;
   width: 250px;
   margin: 30px;
   border: solid 2px  #353533;
+}
+#cats figure{
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+#cats {
+  display: flex;
+  justify-content: center;
 }
 
 nav > a {
   text-decoration: none;
   color: whitesmoke;
   padding: 7px;
+}
+
+@media (max-width: 1000px) {
+  #about > img {
+    width: 50%;
+  }
+  section {
+    display: grid;
+  }
+
+  #cats {
+    display: grid;
+  }
 }
