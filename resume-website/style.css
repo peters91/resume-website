@@ -7,21 +7,19 @@ body {
   margin: 0 auto;
 }
 
-section, img {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+#title, #cats figure, h2, div {
+  text-align: center;
 }
 
-section {
-  list-style-position: inside;
-  padding: 3px;
-  border: 2px solid #67032f;
-  background-color: #92b4c5;
+#cats, nav {
+  display: flex;
+}
+
+#about > img, figure > img {
+  border: solid 2px  #353533;
 }
 
 #title, h2 {
-  text-align: center;
   color: black;
 }
 
@@ -39,41 +37,35 @@ section, nav {
   border-radius: 5px;
 }
 
-div {
-  text-align: center;
+section, img {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about-text {
   text-align: left;
 }
 
-p {
-  padding: 10px;
-}
-
 #about > img {
   height: auto;
   width: auto;
   margin: 20px;
-  border: solid 2px  #353533;
   border-radius: 5%;
-  float: left;
 }
 
 figure > img {
   height: 200px;
   width: 250px;
   margin: 30px;
-  border: solid 2px  #353533;
 }
+
 #cats figure{
   display: grid;
   align-items: center;
-  text-align: center;
 }
 
 #cats {
-  display: flex;
   justify-content: center;
 }
 
@@ -83,15 +75,29 @@ nav > a {
   padding: 7px;
 }
 
+section {
+  display: flow-root;
+  list-style-position: inside;
+  padding: 3px;
+  border: 2px solid #5b2644;
+  background-color: #92b4c5;
+}
+
+p {
+  padding: 10px;
+}
+
+article {
+  float: left;
+}
+
 @media (max-width: 1000px) {
   #about > img {
     width: 50%;
   }
-  section {
-    display: grid;
-  }
 
-  #cats {
+  section, #cats {
     display: grid;
   }
 }
+
