@@ -111,3 +111,7 @@ nav div {
     width: 230px;
   }
 }
+
+button:hover {
+  background-color: lightgray;
+}

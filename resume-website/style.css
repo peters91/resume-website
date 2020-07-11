@@ -25,10 +25,11 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: #353533;
   list-style-type: none;
+  min-height: 35px;
   padding: 5px;
   margin: 2px;
 }
@@ -38,7 +39,7 @@ section, nav {
 }
 
 section, img {
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,10 +70,11 @@ figure > img {
   justify-content: center;
 }
 
-nav > a {
+nav a {
   text-decoration: none;
   color: whitesmoke;
   padding: 7px;
+  display: block;
 }
 
 section {
@@ -91,13 +93,76 @@ article {
   float: left;
 }
 
+.nav-links {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  background-color: #555;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
 @media (max-width: 1000px) {
   #about > img {
     width: 50%;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
   section, #cats {
     display: grid;
   }
+
+  .nav-hide {
+    display: none;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: whitesmoke;
+    border-radius: 3px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-top: 5px;
+    padding-right: 5px;
+  }
+
 }
 
+@media (max-width: 750px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 89px;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
