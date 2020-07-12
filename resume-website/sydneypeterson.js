@@ -8,7 +8,9 @@
  }
 
  function showMenu() {
-  document.getElementById("resume").classList.toggle("nav-hide");
+  for (let element of document.getElementsByClassName("nav-toggle")) {
+    element.classList.toggle("nav-hide");
+  }
  }
 
 })();
