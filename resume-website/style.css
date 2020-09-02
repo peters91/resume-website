@@ -3,11 +3,11 @@ body {
   background-color: lightgray;
   margin-left: 2%;
   margin-right: 2%;
-  max-width: 1300px;
+  max-width: 81em;
   margin: 0 auto;
 }
 
-#title, #cats figure, h2, div {
+#title, #cats figure, h2, h3, div {
   text-align: center;
 }
 
@@ -15,8 +15,8 @@ body {
   display: flex;
 }
 
-#about > img, figure > img {
-  border: solid 2px  #353533;
+#about > img, figure img {
+  border: solid 0.125em  #353533;
 }
 
 #title, h2 {
@@ -29,17 +29,17 @@ nav {
   flex-wrap: wrap;
   background-color: #353533;
   list-style-type: none;
-  min-height: 36px;
-  padding: 5px;
-  margin: 2px;
+  min-height: 2.25em;
+  padding: 0.5em;
+  margin: 0.125em;
 }
 
 section, nav {
-  border-radius: 5px;
+  border-radius: 0.3125em;
 }
 
 section, img {
-  margin-bottom: 2px;
+  margin-bottom: 0.125em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,17 +51,17 @@ section, img {
 #about > img {
   height: auto;
   width: auto;
-  margin: 20px;
+  margin: 1.25em;
   border-radius: 5%;
 }
 
-figure > img {
+#cats img {
   height: 200px;
   width: 250px;
-  margin: 30px;
+  margin:30px;
 }
 
-#cats figure{
+#cats figure {
   display: grid;
   align-items: center;
 }
@@ -73,20 +73,20 @@ figure > img {
 nav a {
   text-decoration: none;
   color: whitesmoke;
-  padding: 7px;
+  padding: 0.4375em;
   display: block;
 }
 
 section {
   display: flow-root;
   list-style-position: inside;
-  padding: 3px;
-  border: 2px solid #5b2644;
+  padding: 0.1875em;
+  border: 0.125em solid #5b2644;
   background-color: #92b4c5;
 }
 
 p {
-  padding: 10px;
+  padding: 0.6250em;
 }
 
 article {
@@ -116,7 +116,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 51em) {
   #about > img {
     width: 50%;
   }
@@ -134,31 +134,31 @@ a:hover {
   .menu-toggle {
     display: block;
     position: absolute;
-    right: 5px;
-    margin: 7px;
+    right: 0.3125em;
+    margin: 0.4375em;
   }
 
   .menu-toggle span {
     display: block;
-    width: 33px;
-    height: 4px;
+    width: 2.0625em;
+    height: 0.25em;
 
     background: whitesmoke;
-    border-radius: 3px;
+    border-radius: 0.1875em;
   }
 
   .menu-toggle span:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
   }
 
   a:hover {
     background-color: #555;
-    border-radius: 5px;
+    border-radius: 0.3125em;
   }
 
   .nav-vl {
     display: inline;
-    border-left: 3px solid whitesmoke;
+    border-left: 0.1875em solid whitesmoke;
   }
 
   .nav-hide {
@@ -166,7 +166,7 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 33em) {
   nav, .nav-links {
     flex-direction: column;
   }
