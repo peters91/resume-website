@@ -9,7 +9,7 @@
     <link href="projects.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@531&display=swap" rel="stylesheet">
     <script src="../sydneypeterson.js"></script>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="../logo.png">
     <title>Sydney Peterson</title>
   </head>
   <body>
@@ -39,41 +39,324 @@
       <section id="synopsis">
         <h2>Synopsis</h2>
         <p>
-          This project is a history quiz webpage with a wide variety of topics.
-          It allows players to create profiles and choose quiz topics to start or
-          continue. It includes both individual or group challenge quiz formats.
+          The goal of this project is to build a history quiz webpage which supports
+          a wide variety of topics.
+          It will allow players to create profiles and choose quiz topics to start or
+          continue. It will include both individual and group challenge quiz formats.
           The group challenges are created by a group creator; who names the group,
           selects the quiz the group will take, and invites players to accept the
           challenge. Individual quiz takers can take any quiz as many times as they
           like and their progress will be saved and reported for the most recent
           attempt of each quiz.
         </p>
-        <p></p>
+        <p>
+          In a previous project, I introduced myself to AWS for the first time and
+          practiced using some of the services like S3 and Route 53. In this
+          project, I intend to expand my knowledge into some of AWS's more dynamic
+          service offeriings including; Lambda, API Gateway, and DynamoDB services.
+          I also hope to learn significantly more about IAM and the principles of
+          secure service architectures.
+        </p>
       </section>
+
       <section class="update">
-        <h2>Project Update #1</h2>
-        <div id="update-img">
+        <h2>July 12, 2020</h2>
+        <p>
+          In May 2020, I made a simple history quiz for my web development class,
+          but I wanted to expand on it and utilize enterprise scaled cloud services.
+          Before getting started on the tech however, I needed a detailed plan.
+          First, I created rough sketches to visualize the end product. Once I
+          was happy with the general look, I bought three different size sketchbooks
+          to simulate desktop, tablet, and mobile screens. I illustrated each
+          web page as a separate sheet to help visualize user actions and noted
+          the button event handlers on each page to track interactions. Once I
+          finished, I had it reviewed by my family to integrate direct feedback
+          into the design. For instance, it was suggested that a create/edit
+          player page should be added. I updated my design to include the
+          recommendation. I saw the value in allowing players to control their
+          information.
+        </p>
+        <div class="update-img">
           <figure>
-            <a href="../archer.jpg" target="_blank">
-              <img src="../archer.jpg" alt="Archer helping with homework">
+            <a href="quizwebimg/singlePlayer.jpg" target="_blank">
+              <img src="quizwebimg/singlePlayer.jpg" alt="Design of Single Player Page">
             </a>
-            <figcaption>Archer</figcaption>
           </figure>
           <figure>
-            <a href="../baboo.jpg" target="_blank">
-              <img src="../baboo.jpg" alt="Baboo helping with homework">
+            <a href="quizwebimg/quizSelection.jpg" target="_blank">
+              <img src="quizwebimg/quizSelection.jpg" alt="Design of Quiz Selection Page">
             </a>
-            <figcaption>Baboo</figcaption>
+          </figure>
+          <figure>
+            <a href="quizwebimg/quizResults.jpg" target="_blank">
+              <img src="quizwebimg/quizResults.jpg" alt="Design of Quiz Results Page">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/quizLayout.jpg" target="_blank">
+              <img src="quizwebimg/quizLayout.jpg" alt="Design of Quiz Layout">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/quizHomepage.jpg" target="_blank">
+              <img src="quizwebimg/quizHomepage.jpg" alt="Design of Quiz Homepage">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/quizHistory.jpg" target="_blank">
+              <img src="quizwebimg/quizHistory.jpg" alt="Design of Quiz History Page">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/newGroup.jpg" target="_blank">
+              <img src="quizwebimg/newGroup.jpg" alt="Design of New Group Page">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/groupLeaderboard.jpg" target="_blank">
+              <img src="quizwebimg/groupLeaderboard.jpg" alt="Design of Group Leaderboard Page">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/groupChallenge.jpg" target="_blank">
+              <img src="quizwebimg/groupChallenge.jpg" alt="Design of Group Challenge Page">
+            </a>
+          </figure>
+          <figure>
+            <a href="quizwebimg/editGroup.jpg" target="_blank">
+              <img src="quizwebimg/editGroup.jpg" alt="Design of Edit Group Page">
+            </a>
           </figure>
         </div>
       </section>
-      <section class="update">
-        <h2>Project Update #2</h2>
-      </section>
-      <section class="update">
-        <h2>Project Update #3</h2>
-      </section>
-    </section>
 
+      <section class="update">
+        <h2>July 22, 2020</h2>
+        <p>
+          I chose to use DynamoDB by AWS as my database. DynamoDB is both flexible
+          and scalable but is also a NoSQL database which is the better fit for
+          my needs over a SQL database. I chose NoSQL because of the performance
+          and cost benefits. I am mainly doing gets and scans of my DynamoDB
+          tables, using partition and sort key values. DynamoDB is cheaper and
+          performs these tasks equal to or better than SQL based options. SQL is
+          best for structured data, but outside of direct queries and scans, I
+          have no need for complex filters or table joins. The scalability of a
+          NoSQL database is also an added benefit.
+          <br/><br/>
+          Once I settled the NoSQL vs. SQL database debate, I designed the tables.
+          I listed out the information I would need to access for my site;
+          category, quiz, quiz questions, player, group, game, and game index.
+          Being less practiced in table design, I had help expanding each table.
+          I learned the importance of separating the game information from the
+          player and group data. The game data would have been more complicated
+          to access for a particular group or player, without separation and indexing.
+        </p>
+        <div class="update-img">
+          <figure>
+            <a href="quizwebimg/tableDesign.jpg" target="_blank">
+              <img id="db-tables" src="quizwebimg/tableDesign.jpg" alt="Design of Dynamo DB tables">
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="update">
+        <h2>August 2, 2020</h2>
+        <p>
+          While thinking about the project I knew I needed to set up a GitHub
+          account to create a web development portfolio. I worked to get my git
+          repositories set up and connected to my VS studio. I set all that up
+          before getting started on designing the logic and behavior.
+          The next step in the project was to design the Application Programming
+          Interface (API). API’s define the interaction between two applications.
+          Based on my DynamoDB tables, I needed at least 11 APIs. Before I started
+          writing the code, I created the APIDOC detailing the behavior I expected
+          based on the request type. The document contains request types, return
+          types, descriptions of behavior, examples of requests and returns, and
+          error handling for each API. The document is an essential part of the
+          build process. Creating a document before writing the code helped me
+          break the tasks down into more manageable pieces and provides a
+          blueprint to follow that saves time and reduces the risk of errors.
+        </p>
+      </section>
+
+      <section class="update">
+        <h2>August 7, 2020</h2>
+        <p>
+          One of the best things I took away from University was that stopping
+          and making a plan is crucial to success. I did a lot of paper writing
+          as a history major. I did copious amounts of research for a wide range
+           of topics. To write a successful paper I needed sort through my
+           research to lay out arguments and provide evidence to support my
+           claims. The first few papers taught me where my weaknesses were in my
+           planning process. As my college career went on I worked on improving
+           my planning strategy. Entering the world of web development, I was
+           introduced to Trello as a way to track tasks. I was using sticky notes
+           and notebooks before Trello. The time-stamped Trello task cards allow
+           me to evaluate the effectiveness of my approach. With sticky notes
+           they can get lost or lose meaning the longer your separated from the
+           task. The Kanban planning style of Trello over the sticky note method
+           allows for better organization of tasks.
+          <br/><br/>
+          Making a plan cannot be understated. It is important to break down work
+          into small manageable pieces with specific goals. Tasks need to be
+          measurable. Otherwise motivation, focus, and confidence become difficult
+          to maintain.
+          For example, a task labeled, work on the project, lacks any direction
+          or focus. If the card states, fill the DynamoDB tables with test data,
+          there is a measurable start and end. The task is not challenging, but
+          the ability to see progress builds confidence in handling more complex
+          tasks. My task list was designed to maintain focus, motivation, and
+          build confidence.
+
+          </p>
+        <div class="update-img">
+          <figure>
+            <a href="quizwebimg/trelloExample.png" target="_blank">
+              <img src="quizwebimg/trelloExample.png" alt="Example of Task Breakdown">
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="update">
+        <h2>August 10, 2020</h2>
+        <p>
+          In order to manage user quiz data I needed to learn how to use the data
+          management tools AWS provides. I needed to learn API Gateway, AWS Lambda
+          and DynamoDB. I learned how to integrate API Gateway with AWS Lambda,
+          and AWS Lambda to DynamoDB. AWS Lambda lets you run code without
+          provisioning or managing servers. API Gateway is an API management
+          tool that sits between a client and a collection of backend services.
+          It protects APIs from overuse and abuse and monitors how the APIs are
+          being used.
+
+          <br/><br/>
+          I will walk through the process of someone visiting my site and making
+          an API call. The request from the user is sent to API Gateway. It routes
+          it to AWS Lambda if the name and request type match. The Lambda function
+          evaluates the request. The lambda runs the code and interacts with Dynamo
+          to get or store (manage) state. The result of that interaction is then
+          sent back through API Gateway. And back to the user depending on the
+          response logic outside the API call.
+
+          <br/><br/>
+          To do this project, I needed to understand how these services interacted
+          with each other. I read through the documentation and practiced in the
+          AWS console. Once I was comfortable and had a good understanding, I
+          built the skeletal structure for the AWS interface. While working on
+          this aspect of the project, I became more familiar with Identity and
+          Access Management (IAM). IAM allows creation and management of AWS users
+          and groups, and uses permissions to allow and deny them access to AWS
+          resources. I opted out of using the generic roles and instead created
+          specific roles within IAM to fit my specific use cases.
+
+        </p>
+        <div class="update-img">
+          <figure>
+            <a href="https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2016/12/20/serverless-arch-1024x553.png" target="_blank">
+              <img src="https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2016/12/20/serverless-arch-1024x553.png" alt="Example of Serverless Architecture AWS">
+            </a>
+            <figcaption>Image Source: <a href="https://aws.amazon.com/blogs/startups/introducing-the-startup-kit-serverless-workload/">AWS Serverless Architecture</a></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="update">
+        <h2>August 17, 2020</h2>
+        <p>
+          After all the planning and designing I started building the APIs. I
+          started with getQuizList, getQuiz and createPlayer. They do not have
+          complex logic and are fairly simple. They grab data from the specified
+          table, or in createPlayer case, puts the input from the user into the
+          specified table. The API’s were incredibly helpful in my endeavor to
+          learn, deploy and test my code in Lambda. The testing helped me visualize
+          the process of API Gateway, AWS Lambda and DynamoDB. The API testing
+          helped me correct my assumptions and learn how to approach my more complex
+          APIs in a more efficient way. Get Leaderboard was changed from returning
+          a game id to returning an array of player ids, total number of questions,
+          and the score. Get Answer was created so that I could provide more information
+          to the player on the get results page, without overloading the get results
+          API. I updated both after correcting my limited understanding when I
+          designed them.
+
+          <br/><br/>
+          As I built each API I felt more and more comfortable with the tools and
+          saw how to improve the API’s I had yet to build. Get Leaderboard and
+          Get Answer were changed and created after I understood how I could
+          utilize them better.
+
+          <br/><br/>
+          The two robust APIs in my list were newGame and recordAnswer. Both were
+          central to setting up state and later reading. New Game had to determine,
+          based on inputs, whether the user was a single player or group. It then
+          put the new game information in three different tables based on the
+          evaluation. Record Answer had to evaluate the given quiz answer with
+          the correct answer to get the score. It would then record the given
+          answer and score for the given player, quiz, question num in the games
+          table.
+          The create group, delete group, and playerSignIn were more than the
+          simple get and put requests but not as logic heavy as newGame and
+          recordAnswer. They fit in complexity with getLeaderboard and getAnswer.
+          Thanks to the simple API’s early on I was able to do these API’s with
+          little trouble and improve upon them as I built them.
+
+          <br/><br/>
+          The API’s built off each other and allowed me to build my confidence
+          with each API. Each API helped me stretch my understanding of the AWS
+          tools and improve my logic and assumptions.
+        </p>
+      </section>
+
+      <section class="update">
+        <h2>September 9, 2020</h2>
+        <p>
+
+        </p>
+        <div class="update-img">
+          <figure>
+            <a href="quizwebimg/buttonPlan.jpg" target="_blank">
+              <img src="quizwebimg/buttonPlan.jpg" alt="Example of Button Functionality Plan">
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="update">
+        <h2>October 22, 2020</h2>
+        <p>
+
+        </p>
+        <div class="update-img">
+          <figure>
+            <a href="quizwebimg/groupSignInError.png" target="_blank">
+              <img src="quizwebimg/groupSignInError.png" alt="Example of Group Sign in Error">
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="update">
+        <h2>November 6, 2020</h2>
+        <p>
+
+        </p>
+      </section>
+
+      <section class="update">
+        <h2>December 31, 2020</h2>
+        <p>
+
+        </p>
+        <div class="update-img">
+          <figure>
+            <a href="quizwebimg/" target="_blank">
+              <img src="quizwebimg/" alt="Example of CSS">
+            </a>
+          </figure>
+        </div>
+      </section>
+
+    </section>
   </body>
 </html>

@@ -60,22 +60,36 @@
 #synopsis h2, .update h2 {
   padding-bottom: 20px;
   border-bottom: solid 2px black;
+  text-align: left;
 }
 
-#update-img {
+.update-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#update-img figure {
-  display: grid;
-  align-items: center;
-  text-align: center;
+.update p {
+  border-bottom: dashed 2px black;
+  padding-bottom: 30px;
+}
+
+.update-img img{
+  height: 200px;
+  width: 250px;
+}
+
+#db-tables{
+  height: 300px;
+  width: 250px;
+}
+
+.update-img figure {
+  margin: .5em;
 }
 
 @media (max-width: 51em) {
-  #update-img {
+  .update-img {
     display: grid;
   }
 
