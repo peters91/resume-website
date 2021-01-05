@@ -28,6 +28,10 @@
       <div class="nav-links">
         <a href="../projects.html" class="nav-toggle nav-hide">Projects</a>
       </div>
+      <div class="nav-hide nav-vl nav-toggle"></div>
+      <div class="nav-links">
+        <a href="http://quiz.sydneystirling.com/index.html" class="nav-toggle nav-hide">Quiz</a>
+      </div>
       <div class="menu-toggle">
         <span></span>
         <span></span>
@@ -311,7 +315,24 @@
       <section class="update">
         <h2>September 9, 2020</h2>
         <p>
+          In the next step of the project, I started on frontend development.
+          The best approach was to focus on the website’s buttons. I focused on
+          one button at a time. I mapped out how the player would use the buttons
+          and what event handler should trigger from the button click. I listed
+          out how a player could leave and come back to the site. I wanted to be
+          able to save player data if they were to accidentally leave or refresh
+          the page in the middle of a quiz. Understanding this behavior helped me
+          determine the best order to call, store, and delete player information
+          in the local storage. I utilize the local storage to help maintain the
+          quiz data.
 
+          <br/><br/>
+          I check the existence of data in local storage in key places, like starting
+          a quiz, to reduce the risk of overwriting a quiz the player may already
+          be taking. It also keeps the site from making unnecessary API calls.
+          Making unnecessary API calls can increase latency and cost. My website
+          is small enough that the cost is minimal, but if I want to expand in the
+          future, I need to build it with scalability in mind.
         </p>
         <div class="update-img">
           <figure>
@@ -325,7 +346,19 @@
       <section class="update">
         <h2>October 22, 2020</h2>
         <p>
+          As I worked through building the functionality of each button, I came
+          across fixes I needed to make to my API’s. A few of my API’s like getAnswers
+          and getGroupLeaderboard were missing the ability to take the user input
+          group name and generate the UUID to make the proper backend calls. I also
+          modified the group landing pages facilitating the need for a new API.
+          I created getGroupQuizId and groupSignIn.
 
+          <br/><br/>
+          GetGroupQuizId was created to help retrieve the quiz associated with the
+          group. GroupSignIn was created to verify that a group exists. Both are
+          crucial to the function of the group challenge portion of the website
+          and were missed in my first round of planning. Something to watch out
+          for in my next project.
         </p>
         <div class="update-img">
           <figure>
@@ -339,7 +372,24 @@
       <section class="update">
         <h2>November 6, 2020</h2>
         <p>
+          I spent this time building each button and addressing issues that popped
+          up during the testing. Things like error messages not disappearing when
+          they should or having buttons generate before all the information was
+          retrieved. I did not have any major issues. I had a few API tweaks as
+          mentioned before, some reordering and making a few functions async to
+          help reduce the timing issues.
 
+          <br/><br/>
+          Once I got the code to where it was working with no errors, I went through
+          and refactored my code. I had made logic assumptions that needed to be
+          corrected, and I cleaned up functions that had become cluttered. My main
+          programming crime was nesting too many if statements and for loops, nothing
+          horrendous but more than necessary. With more practice, this will become
+          a smaller and smaller occurrence.
+
+          <br/><br/>
+          After the fixes, I noticed increased speed from when the button is
+          clicked to the generation of the next screen.
         </p>
       </section>
 
