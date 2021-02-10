@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   max-width: 1200px;
 }
@@ -114,4 +115,122 @@ nav div {
 
 button:hover {
   background-color: lightgray;
+=======
+body {
+  max-width: 1200px;
+}
+
+body, div {
+  margin: 0 auto;
+}
+
+h3, h4, ul {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+section, nav, nav div {
+  display: flex;
+}
+
+h1, footer {
+  text-align: center;
+}
+
+h1, h2 {
+  margin-right: 5px;
+}
+
+h2, nav {
+  padding: 10px;
+}
+
+h2, h3 {
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 45px;
+  border-bottom: solid #92b4c5 7px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 40%;
+  font-size: 20px;
+  padding: 5px;
+}
+
+section {
+  justify-content: space-evenly;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+nav p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+nav img {
+  width: 40px;
+  height: 50px;
+}
+
+nav div {
+  border: none;
+  align-items: center;
+}
+
+@media print {
+  button, footer {
+    display: none;
+  }
+
+  nav img{
+    width: 17px;
+    height: 23px;
+  }
+
+  nav p {
+    font-size: small;
+  }
+
+  h1 {
+    border-bottom: solid black 7px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav div {
+    width: 230px;
+  }
+}
+
+button:hover {
+  background-color: lightgray;
+>>>>>>> 4d1c0e4db3a562bf65fca8d168ff7c41d9ce930a
 }
