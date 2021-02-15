@@ -63,7 +63,104 @@ body {
   background: -moz-linear-gradient(right, #5287b8, #6f9dc2);
   background: -o-linear-gradient(right, #5287b8, #6f9dc2);
   background: linear-gradient(to left, #5287b8, #6f9dc2);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Slab', serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #353533;
+  list-style-type: none;
+  min-height: 2.25em;
+  padding: 0.5em;
+  margin: 0.125em;
+}
+
+nav {
+  border-radius: 0.3125em;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.4375em;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+.nav-vl {
+  display: none;
+}
+
+@media (max-width: 51em) {
+  nav {
+    display: flex;
+    justify-content: left;
+    position: relative;
+  }
+
+  .nav-vl {
+    display: inline;
+    border-left: 0.1875em solid whitesmoke;
+  }
+
+  .nav-hide {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 0.3125em;
+    margin: 0.4375em;
+  }
+
+  a:hover {
+    background-color: #555;
+    border-radius: 0.3125em;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 2.0625em;
+    height: 0.25em;
+
+    background: whitesmoke;
+    border-radius: 0.1875em;
+  }
+
+  .menu-toggle span:not(:last-child) {
+    margin-bottom: 0.3125em;
+  }
+}
+
+@media (max-width: 33em) {
+  nav, .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-vl {
+    display: none;
+  }
 }
