@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import NavBar from "../../components/navbar"
 import Head from "../../components/head"
 import JulyBlogPostPhoto1 from "../images/quizwebimg/singlePlayer.jpg"
@@ -70,75 +69,94 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={JulyBlogPostPhoto1}>
+              <a href={JulyBlogPostPhoto1}>
                 <img
                   src={JulyBlogPostPhoto1}
                   alt="Design of Single Player Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto2}>
+              <a href={JulyBlogPostPhoto2}>
                 <img
                   src={JulyBlogPostPhoto2}
                   alt="Design of Quiz Selection Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto3}>
+              <a href={JulyBlogPostPhoto3}>
                 <img
                   src={JulyBlogPostPhoto3}
                   alt="Design of Quiz Results Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto4}>
-                <img src={JulyBlogPostPhoto4} alt="Design of Quiz Layout" />
-              </Link>
+              <a href={JulyBlogPostPhoto4}>
+                <img
+                  src={JulyBlogPostPhoto4}
+                  alt="Design of Quiz Layout"
+                  target="_blank"
+                />
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto5}>
-                <img src={JulyBlogPostPhoto5} alt="Design of Quiz Homepage" />
-              </Link>
+              <a href={JulyBlogPostPhoto5}>
+                <img
+                  src={JulyBlogPostPhoto5}
+                  alt="Design of Quiz Homepage"
+                  target="_blank"
+                />
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto6}>
+              <a href={JulyBlogPostPhoto6}>
                 <img
                   src={JulyBlogPostPhoto6}
                   alt="Design of Quiz History Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto7}>
-                <img src={JulyBlogPostPhoto7} alt="Design of New Group Page" />
-              </Link>
+              <a href={JulyBlogPostPhoto7}>
+                <img
+                  src={JulyBlogPostPhoto7}
+                  alt="Design of New Group Page"
+                  target="_blank"
+                />
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto8}>
+              <a href={JulyBlogPostPhoto8}>
                 <img
                   src={JulyBlogPostPhoto8}
                   alt="Design of Group Leaderboard Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto9}>
+              <a href={JulyBlogPostPhoto9}>
                 <img
                   src={JulyBlogPostPhoto9}
                   alt="Design of Group Challenge Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
             <figure>
-              <Link to={JulyBlogPostPhoto10}>
+              <a href={JulyBlogPostPhoto10}>
                 <img
                   src={JulyBlogPostPhoto10}
                   alt="Design of Edit Group Page"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
           </div>
         </section>
@@ -169,13 +187,14 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={JulyBlogPostPhoto11}>
+              <a href={JulyBlogPostPhoto11}>
                 <img
                   id="db-tables"
                   src={JulyBlogPostPhoto11}
                   alt="Design of Dynamo DB tables"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
           </div>
         </section>
@@ -233,12 +252,13 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={AugustBlogPostPhoto}>
+              <a href={AugustBlogPostPhoto}>
                 <img
                   src={AugustBlogPostPhoto}
                   alt="Example of Task Breakdown"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
           </div>
         </section>
@@ -279,17 +299,17 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to="https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2016/12/20/serverless-arch-1024x553.png">
+              <a href="https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2016/12/20/serverless-arch-1024x553.png">
                 <img
                   src="https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2016/12/20/serverless-arch-1024x553.png"
                   alt="Example of Serverless Architecture AWS"
                 />
-              </Link>
+              </a>
               <figcaption>
                 Image Source:{" "}
-                <Link to="https://aws.amazon.com/blogs/startups/introducing-the-startup-kit-serverless-workload/">
+                <a href="https://aws.amazon.com/blogs/startups/introducing-the-startup-kit-serverless-workload/">
                   AWS Serverless Architecture
-                </Link>
+                </a>
               </figcaption>
             </figure>
           </div>
@@ -366,12 +386,13 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={SeptemberBlogPostPhoto}>
+              <a href={SeptemberBlogPostPhoto}>
                 <img
                   src={SeptemberBlogPostPhoto}
                   alt="Example of Button Functionality Plan"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
           </div>
         </section>
@@ -396,12 +417,13 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={OctoberBlogPostPhoto}>
+              <a href={OctoberBlogPostPhoto}>
                 <img
                   src={OctoberBlogPostPhoto}
                   alt="Example of Group Sign in Error"
+                  target="_blank"
                 />
-              </Link>
+              </a>
             </figure>
           </div>
         </section>
@@ -451,9 +473,13 @@ const QuizProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={DecemberBlogPostPhoto}>
-                <img src={DecemberBlogPostPhoto} alt="Example of CSS" />
-              </Link>
+              <a href={DecemberBlogPostPhoto}>
+                <img
+                  src={DecemberBlogPostPhoto}
+                  alt="Example of CSS"
+                  target="_blank"
+                />
+              </a>
             </figure>
           </div>
         </section>
@@ -463,15 +489,15 @@ const QuizProject = () => {
           <p>
             In the next phase I sent out my new website to friends and family to
             test it out. I got some good quality feedback, mainly for the mobile
-            version. I had sent the link in a text and almost all opened my site
-            on their phones. The feedback I heard the most from everyone was
-            about adding a next/previous button to the bottom of the quiz. It
-            was a minor inconvenience for the desktop but it was a mildly
-            frustrating experience for the mobile users. Luckily it was
-            something I could easily fix and was able to rather quickly. I also
-            changed the create player page to automatically log in players after
-            they created a player. The previous design caused a little friction
-            so it was worth changing.
+            version. I had sent the a in a text and almost all opened my site on
+            their phones. The feedback I heard the most from everyone was about
+            adding a next/previous button to the bottom of the quiz. It was a
+            minor inconvenience for the desktop but it was a mildly frustrating
+            experience for the mobile users. Luckily it was something I could
+            easily fix and was able to rather quickly. I also changed the create
+            player page to automatically log in players after they created a
+            player. The previous design caused a little friction so it was worth
+            changing.
             <br />
             <br />
             The second round of testing after the fixes were a much better user

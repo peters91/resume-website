@@ -9,22 +9,34 @@ export default function Resume() {
       <h1>Sydney Peterson</h1>
       <nav>
         <div>
-          <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" />
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+            alt="Phone Icon"
+          />
           <p>[available upon request]</p>
         </div>
 
         <div>
-          <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter.png" />
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/secured-letter.png"
+            alt="Email Icon"
+          />
           <p>stirling858@gmail.com</p>
         </div>
 
         <div>
-          <img src="https://img.icons8.com/ios-filled/50/000000/address.png" />
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/address.png"
+            alt="Physical Location Icon"
+          />
           <p>Lynnwood, WA 98087</p>
         </div>
 
         <div>
-          <img src="https://img.icons8.com/ios-filled/50/000000/resume-website.png" />
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/resume-website.png"
+            alt="Website Icon"
+          />
           <p>sydneystirling.com</p>
         </div>
       </nav>

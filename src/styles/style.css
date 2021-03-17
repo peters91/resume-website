@@ -182,6 +182,10 @@ a:hover {
     flex-direction: column;
   }
 
+  nav a {
+    text-align: left;
+  }
+
   .nav-vl {
     display: none;
   }

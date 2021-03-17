@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Head from "../../components/head"
 import NavBar from "../../components/navbar"
 import BlogPostPhoto from "../images/quizwebimg/cssExample.png"
@@ -52,9 +51,14 @@ const ResumeProject = () => {
           </p>
           <div className="update-img">
             <figure>
-              <Link to={BlogPostPhoto}>
-                <img src={BlogPostPhoto} alt="Example of CSS code" />
-              </Link>
+              <a href={BlogPostPhoto}>
+                <img
+                  src={BlogPostPhoto}
+                  alt="Example of CSS code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              </a>
             </figure>
           </div>
         </section>
