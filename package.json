@@ -1,0 +1,35 @@
+{
+  "name": "sydneystirling-website",
+  "private": true,
+  "description": "Sydney Peterson Website to host my resume and projects",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby-plugin-s3 deploy",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-s3": "^0.3.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peters91/sydneystirling-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peters91/sydneystirling-website.git"
+  }
+}
