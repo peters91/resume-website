@@ -2,6 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 export default function NavBar() {
+  function showMenu() {
+    for (let element of document.getElementsByClassName("nav-toggle")) {
+      element.classList.toggle("nav-hide")
+    }
+  }
   return (
     <div>
       <nav>
@@ -18,7 +23,7 @@ export default function NavBar() {
             Projects
           </Link>
         </div>
-        <div className="menu-toggle">
+        <div className="menu-toggle" onClick={showMenu}>
           <span></span>
           <span></span>
           <span></span>
