@@ -16,14 +16,13 @@ import AugustBlogPostPhoto from "../images/quizwebimg/trelloExample.png"
 import SeptemberBlogPostPhoto from "../images/quizwebimg/buttonPlan.jpg"
 import OctoberBlogPostPhoto from "../images/quizwebimg/groupSignInError.png"
 import DecemberBlogPostPhoto from "../images/quizwebimg/cssSheepExample.png"
+import Header from "../../components/header"
 
 const QuizProject = () => {
   return (
     <div>
-      <section id="title">
-        <h1>Quiz Website Project</h1>
-      </section>
       <Head />
+      <Header name="Quiz Website Project" />
       <NavBar />
 
       <section className="blog">

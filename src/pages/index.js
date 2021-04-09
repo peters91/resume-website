@@ -1,6 +1,7 @@
 import React from "react"
 import NavBar from "../components/navbar"
 import Head from "../components/head"
+import Header from "../components/header"
 import selfie from "./images/mainpageimg/sydney.jpg"
 import archer from "./images/mainpageimg/archer.jpg"
 import baboo from "./images/mainpageimg/baboo.jpg"
@@ -9,10 +10,10 @@ export default function Home() {
   return (
     <div>
       <Head />
+      <Header name="Sydney Peterson" />
       <NavBar />
       <section>
-        <h2>Sydney Peterson</h2>
-        <h3>About Me</h3>
+        <h2>About Me</h2>
         <hr width="95%" />
         <article id="about">
           <img src={selfie} alt="Sydney Selfie" />

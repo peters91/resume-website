@@ -23,6 +23,12 @@ export default function NavBar() {
             Projects
           </Link>
         </div>
+        <div className="nav-hide nav-vl nav-toggle"></div>
+        <div className="nav-links">
+          <Link to="/signin" className="nav-toggle nav-hide">
+            Sign In
+          </Link>
+        </div>
         <div className="menu-toggle" onClick={showMenu}>
           <span></span>
           <span></span>

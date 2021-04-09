@@ -1,12 +1,13 @@
 import React from "react"
 import Head from "../components/head"
+import Header from "../components/header"
 import ResumeDoc from "./documents/sydney-peterson-resume.pdf"
 
 export default function Resume() {
   return (
     <div className="resume">
       <Head />
-      <h1>Sydney Peterson</h1>
+      <Header name="Sydney Peterson" />
       <nav>
         <div>
           <img

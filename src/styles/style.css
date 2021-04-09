@@ -453,3 +453,14 @@ a:hover {
 
 @media (max-width: 33em) {
 }
+
+/**Sign In/Out*/
+amplify-authenticator {
+  --container-height: auto;
+  --amplify-font-family: "Roboto Slab", serif;
+  --amplify-primary-color: #5b2644;
+}
+
+amplify-greetings {
+  --amplify-primary-color: #5b2644;
+}

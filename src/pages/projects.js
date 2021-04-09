@@ -6,15 +6,14 @@ import Head from "../components/head"
 import ResumeProjectPhoto from "./images/mainpageimg/logo.png"
 import QuizProjectPhoto from "./images/quizwebimg/supplies.jpg"
 import GameProjectPhoto from "./images/gamewebimg/sortExample.jpg"
+import Header from "../components/header"
 
 export default function Projects() {
   return (
     <div>
       <Head />
+      <Header name="Projects" />
       <NavBar />
-      <section id="title">
-        <h1>Projects</h1>
-      </section>
 
       <section className="project-list">
         <Link to="/projectpages/resumewebsite">

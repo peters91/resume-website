@@ -2,14 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import Head from "../../components/head"
 import NavBar from "../../components/navbar"
+import Header from "../../components/header"
 
 const GameProject = () => {
   return (
     <div>
-      <section id="title">
-        <h1>Game Website Project</h1>
-      </section>
       <Head />
+      <Header name="Game Website Project" />
       <NavBar />
 
       <section className="blog">

@@ -1,15 +1,14 @@
 import React from "react"
 import Head from "../../components/head"
+import Header from "../../components/header"
 import NavBar from "../../components/navbar"
 import BlogPostPhoto from "../images/quizwebimg/cssExample.png"
 
 const ResumeProject = () => {
   return (
     <div>
-      <section id="title">
-        <h1>Resume Website Project</h1>
-      </section>
       <Head />
+      <Header name="Resume Website Project" />
       <NavBar />
 
       <section className="blog">
